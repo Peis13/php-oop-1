@@ -1,0 +1,10 @@
+Crea un diagramma per una tabella di db che rappresenti gli Users di un blog.
+
+DB_USERS:
+
+id: numero - SMALL - PRIMARY_KEY (AUTO_INCREMENT - UNIQUE)
+nome: stringa - VARCHAR(50) - NOTNULL
+cognome: stringa - VARCHAR(50) - NOTNULL
+eta: numero - TINYINT - NOTNULL
+email: stringa - VARCHAR(100) - NOTNULL
+password: stringa - VARCHAR(30) - NOTNULL
