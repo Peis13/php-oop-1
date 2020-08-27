@@ -8,10 +8,11 @@ class User {
   public $email;
   public $password;
 
-  public function __construct($_nome, $_cognome, $_eta) {
+  public function __construct($_nome, $_cognome, $_eta, $_email) {
     $this->nome = $_nome;
     $this->cognome = $_cognome;
     $this->eta = $_eta;
+    $this->email = $_email;
   }
 
   public function getFullName() {
@@ -19,7 +20,7 @@ class User {
   }
 
   public function getDetails() {
-    return $this->getFullName() . 'Età: ' . $this->eta . '<br>';
+    return $this->getFullName() . 'Email: ' . $this->email . '<br>' . 'Età: ' . $this->eta . '<br>';
   }
 };
 
