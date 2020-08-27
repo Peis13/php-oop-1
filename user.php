@@ -2,11 +2,13 @@
 
 // oggetto User
 class User {
+  public $id;
   public $nome;
   public $cognome;
   public $eta;
   public $email;
   public $password;
+  public $tipo;
 
   public function __construct($_nome, $_cognome, $_eta, $_email) {
     $this->nome = $_nome;
@@ -16,11 +18,7 @@ class User {
   }
 
   public function getFullName() {
-    return $this->nome . ' ' . $this->cognome . '<br>';
-  }
-
-  public function getDetails() {
-    return $this->getFullName() . 'Email: ' . $this->email . '<br>' . 'Età: ' . $this->eta . '<br>';
+    return $this->nome . ' ' . $this->cognome;
   }
 };
 
