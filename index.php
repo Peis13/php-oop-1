@@ -6,8 +6,7 @@ require_once(__DIR__ . '/database.php');
 require_once(__DIR__ . '/user.php');
 
 foreach ($db_users as $user) {
-  $utente = new User($user['nome'], $user['cognome']);
-  $utente->eta = $user['eta'];
+  $utente = new User($user['nome'], $user['cognome'], $user['eta']);
 
   echo 'Utente: ' . $utente->getDetails() . '<br>';
 }

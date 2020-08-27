@@ -8,9 +8,10 @@ class User {
   public $email;
   public $password;
 
-  public function __construct($name, $lastname) {
-    $this->nome = $name;
-    $this->cognome = $lastname;
+  public function __construct($_nome, $_cognome, $_eta) {
+    $this->nome = $_nome;
+    $this->cognome = $_cognome;
+    $this->eta = $_eta;
   }
 
   public function getFullName() {
